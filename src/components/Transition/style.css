@@ -1,0 +1,42 @@
+@font-face {
+    font-family: kimono;
+    src: url(/kimono.otf);
+}
+
+#transition-root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #cf0b0b;
+    pointer-events: none;
+    transition: opacity .7s;
+    isolation: isolate;
+    z-index: 900;
+    overflow: hidden;
+}
+#transition-root #transition-canvas{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#transition-root #transition-circle { 
+    position: absolute;
+    bottom: calc(-100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    aspect-ratio: 1;
+    z-index: 900;
+}
+
+#transition-root #transition-text {
+    position: absolute;
+    font-family: kimono;
+    color: #84ae37;
+    font-size: 3rem;
+    width: 100vw;
+    top: calc(50%);
+}

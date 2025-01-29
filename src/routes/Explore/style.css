@@ -1,0 +1,74 @@
+@font-face {
+    font-family: kimono;
+    src: url(/kimono.otf);
+}
+
+#noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/nois.png);
+    opacity: .4;
+    background-size: 300px;
+    background-repeat: repeat;
+    z-index: 100;
+}
+
+#explore-root main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+#explore-root img {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    width: 400px;
+    aspect-ratio: 1;
+}
+
+#explore-root #categories {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/circle.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px;
+}
+
+#categories div {
+    width: 102%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    color: #352d2a;
+    font-family: kimono;
+    background-color: #cccccc47;
+    border-radius: 16px;
+    border: 2px solid #9b9b9b;
+    backdrop-filter: blur(6px);
+}
+#categories div:first-child{
+    justify-content: left;
+    margin-right: -1400px;
+    clip-path: polygon(0% 0%, 50% 0%, 50% 30%, 40% 70%, 40% 100%, 0% 100%);
+}
+#categories div:last-child{
+    justify-content: right;
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 70%, 60% 30%);
+}
+#categories div p {
+    padding: 0 2rem;
+    padding-right: 5rem;
+}

@@ -1,0 +1,56 @@
+#home-root #hero-kanji-image {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    width: 30%;
+    z-index: -1;
+}
+
+#home-root #noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/nois.png);
+    opacity: .4;
+    background-size: 300px;
+    background-repeat: repeat;
+    z-index: 100;
+    pointer-events: none;
+}
+
+#home-root main {
+    position: relative;
+    display: flex;
+    gap: 128px;
+    z-index: 200;
+}
+
+#home-root main div {
+    text-align: left;
+}
+
+#home-root main div h2 {
+    align-self: center;
+    text-align: left;
+    max-width: 20ch;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #352d2a;
+    margin: 2rem 0;
+}
+
+#home-root main img {
+    height: 360px;
+    border-radius: 16px;
+}
+
+#home-root #smiley-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
